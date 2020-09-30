@@ -1,16 +1,16 @@
 tags = {
   "classification"    = "pbmm"
-  "contact"           = "<some email>; <some email>; etc"
+  "contact"           = "john.nephin@canada.ca"
   "costcentre"        = "566811"
   "env"               = "dev"
-  "owner"             = "<some email>; <some email>; etc"
+  "owner"             = "john.nephin@canada.ca"
   "cloudusageprofile" = "3"
-  "branch"            = "<branch name>"
+  "branch"            = "CIO"
 }
 
 env     = "ScSc"
 group   = "CIO"
-project = "ESLZ_vnext13"
+project = "Chatbot"
 
 location = "canadacentral"
 
@@ -18,7 +18,7 @@ deployOptionalFeatures = {
   ddos_protection_plan       = false
   defaultRoute               = false
   recovery_services_vault    = false
-  security_center            = false
+  security_center            = true
   sentinel                   = false
   update_management          = false
   deny_publicip_policy       = false
@@ -34,8 +34,8 @@ optionalFeaturesConfig = {
     soft_delete_enabled = true       # Is soft delete enable for this Vault?
   }
   security_center = {
-    email = "some@test.com"
-    phone = "123-456-7890"
+    email = "johnnephin@canada.ca"
+    phone = "613-808-5872"
   }
 }
 
@@ -63,19 +63,21 @@ Landing-Zone-Next-Hop = "10.10.20.10"
 
 domain = {
   public = {
-    name = "some.domain.com"
+    name = "chatbot.ciso.ssc-spc.gc.ca"
   }
   private = {
-    name                 = "some.domain.local"
+    name                 = "chatbot.local"
     registration_enabled = true # Set to true if auto-registration of virtual machine records in the virtual network in the Private DNS zone enabled?
   }
 }
 
 L1_RBAC = {
   ownerNames = [
+    "john.nephin@ssc-spc.gc.ca"
   ]
 
   contributorNames = [
+    "john.nephin@ssc-spc.gc.ca"
   ]
 
   readerNames = [
@@ -96,7 +98,7 @@ windows_VMs = [
   }
   */
 
-  {
+  /*{
     deploy                  = true
     serverType              = "SWJ"
     userDefinedString       = "RDS"
@@ -116,5 +118,5 @@ windows_VMs = [
       version   = "latest"
     }
     encryptDisks = true
-  }
+  }*/
 ]

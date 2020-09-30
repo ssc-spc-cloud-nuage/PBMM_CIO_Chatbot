@@ -3,10 +3,10 @@ output "resource_groups_L1" {
   sensitive = true
 }
 
-output "subnets" {
+/*output "subnets" {
   value     = local.subnets
   sensitive = true
-}
+}*/
 
 output "Project-law" {
   value     = local.Project-law
@@ -18,10 +18,10 @@ output "Project_law-sa" {
   sensitive = true
 }
 
-output "Project-kv" {
+/*output "Project-kv" {
   value     = local.Project-kv
   sensitive = true
-}
+}*/
 
 output "L2_Subscription_Owners" {
   value     = local.azuread_groups_L1.L2_Subscription_Owners

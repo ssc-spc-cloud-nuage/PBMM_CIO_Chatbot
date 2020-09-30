@@ -5,7 +5,7 @@
 
 env     = "ScSc"
 group   = "CIO"
-project = "ESLZ_vnext13"
+project = "Chatbot"
 
 convention = "passthrough"
 location = "canadacentral"

@@ -1,16 +1,16 @@
 tags = {
   "classification"    = "pbmm"
-  "contact"           = "<some email>; <some email>; etc"
+  "contact"           = "john.nephin@canada.ca"
   "costcentre"        = "566811"
   "env"               = "dev"
-  "owner"             = "<some email>; <some email>; etc"
+  "owner"             = "john.nephin@canada.ca"
   "cloudusageprofile" = "3"
-  "branch"            = "<branch name>"
+  "branch"            = "CIO"
 }
 
 env     = "ScSc"
 group   = "CIO"
-project = "ESLZ_vnext13"
+project = "Chatbot"
 
 location = "canadacentral"
 
@@ -90,5 +90,5 @@ windows_VMs = [
 #  - tfstate file: launchpad_opensource_light.tfstate
 
 L1_terraform_remote_state_config = {
-    key                   = "L1_blueprint_base_example.tfstate" # <========= Don't forget to update with the env name
+    key                   = "L1_blueprint_base_dev.tfstate" # <========= Don't forget to update with the env name
 }

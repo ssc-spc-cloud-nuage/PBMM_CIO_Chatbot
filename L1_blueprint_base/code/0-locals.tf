@@ -1,6 +1,6 @@
 locals {
-  unique_Logs                   = substr(sha1(local.resource_groups_L1.Logs.id), 0, 8)
-  unique_Keyvault               = substr(sha1(local.resource_groups_L1.Keyvault.id), 0, 8)
+  unique_Logs = substr(sha1(local.resource_groups_L1.Logs.id), 0, 8)
+  //unique_Keyvault               = substr(sha1(local.resource_groups_L1.Keyvault.id), 0, 8)
   prefix                        = "${var.env}-${local.userDefinedStringPrefix}"
   l0_prefix                     = "${var.env}-${var.group}_${var.project}"
   userDefinedStringPrefix       = "${var.group}_${var.project}"
@@ -9,6 +9,6 @@ locals {
   project_short                 = substr(var.project, 0, 4)
   userDefinedStringPrefix_short = "${local.group_short}_${local.project_short}"
   prefix_short                  = "${local.env_short}-${local.userDefinedStringPrefix_short}"
-  
-  SWJ-01_IP = cidrhost(local.subnets.MAZ.address_prefix, 4)
+
+  //SWJ-01_IP = cidrhost(local.subnets.MAZ.address_prefix, 4)
 }

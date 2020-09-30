@@ -1,6 +1,6 @@
 locals {
-  unique_Logs                   = substr(sha1(local.resource_groups_L1.Logs.id), 0, 8)
-  unique_Keyvault               = substr(sha1(local.resource_groups_L1.Keyvault.id), 0, 8)
+  unique_Logs = substr(sha1(local.resource_groups_L1.Logs.id), 0, 8)
+  //unique_Keyvault               = substr(sha1(local.resource_groups_L1.Keyvault.id), 0, 8)
   prefix                        = "${var.env}-${var.group}"
   userDefinedStringPrefix       = "${var.group}_${var.project}"
   env_short                     = substr(var.env, 0, 4)

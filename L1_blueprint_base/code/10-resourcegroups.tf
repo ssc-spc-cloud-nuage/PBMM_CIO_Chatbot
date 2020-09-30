@@ -25,35 +25,35 @@ locals {
     AutomationAccount = {
       userDefinedString = "${local.userDefinedStringPrefix}_AutomationAccount"
     },
-    Backups = {
-      userDefinedString = "${local.userDefinedStringPrefix}_Backups"
-    },
-    Network = {
-      userDefinedString = "${local.userDefinedStringPrefix}_Network"
-    },
-    Keyvault = {
-      userDefinedString = "${local.userDefinedStringPrefix}_Keyvault"
-    },
+    //Backups = {
+    //  userDefinedString = "${local.userDefinedStringPrefix}_Backups"
+    //},
+    //Network = {
+    //  userDefinedString = "${local.userDefinedStringPrefix}_Network"
+    //},
+    //Keyvault = {
+    //  userDefinedString = "${local.userDefinedStringPrefix}_Keyvault"
+    //},
     Logs = {
       userDefinedString = "${local.userDefinedStringPrefix}_Logs"
     },
-    DNS = {
-      userDefinedString = "${local.userDefinedStringPrefix}_DNS"
-    },
-    Management = {
-      userDefinedString = "${local.userDefinedStringPrefix}_Management"
-    },
+    //DNS = {
+    //  userDefinedString = "${local.userDefinedStringPrefix}_DNS"
+    //},
+    //Management = {
+    //  userDefinedString = "${local.userDefinedStringPrefix}_Management"
+    //},
   }
 }
 
 module resource_groups_L1 {
-  source = "github.com/canada-ca-terraform-modules/terraform-azurerm-caf-resource_groups?ref=v1.1.0"
+  source   = "github.com/canada-ca-terraform-modules/terraform-azurerm-caf-resource_groups?ref=v1.1.0"
   for_each = local.rglist
 
   userDefinedString = each.value.userDefinedString
-  env = var.env
-  location = lookup(each.value, "location", var.location)
-  tags     = merge(lookup(each.value, "tags", {}), var.tags)
+  env               = var.env
+  location          = lookup(each.value, "location", var.location)
+  tags              = merge(lookup(each.value, "tags", {}), var.tags)
 }
 
 locals {
