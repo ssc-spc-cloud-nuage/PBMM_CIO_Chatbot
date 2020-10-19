@@ -8,7 +8,7 @@ locals {
 //Only windows is available via the portal deploy from qnamaker.ai
 module "ScSc-CIO-Chatbot-KB" {
   for_each                  = local.deployList
-  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=202010116.dev"
+  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20201019.1"
   location                  = local.resource_groups_L2.Project.location
   cognitiveServicesLocation = var.cognitiveServicesLocation
   resourceGroupName         = local.resource_groups_L2.Project.name

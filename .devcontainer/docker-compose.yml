@@ -6,7 +6,9 @@
   version: '3.7'
   services:
     rover:
-      image: sscspccloudnuage/rover:2009.0812
+      build: 
+        context: .
+        dockerfile: Dockerfile
     
       labels:
         - "caf=Azure CAF"
