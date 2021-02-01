@@ -1,9 +1,8 @@
 locals {
   rglist = {
-    Project       = { userDefinedString = "${local.userDefinedStringPrefix}_Project" },
-    FAQPlus       = { userDefinedString = "${local.userDefinedStringPrefix}_FAQPlus" },
-    StudentTemp   = { userDefinedString = "${local.userDefinedStringPrefix}_StudentTemp" },
-    StudentFRTemp = { userDefinedString = "${local.userDefinedStringPrefix}_StudentFRTemp" },
+
+    Project = { userDefinedString = "${local.userDefinedStringPrefix}_Project" }
+
   }
 }
 

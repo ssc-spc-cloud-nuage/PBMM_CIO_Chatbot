@@ -1,0 +1,13 @@
+//Will sharte a plan between EN and FR
+resource "azurerm_app_service_plan" "Chatbot-svcplan" {
+  name                = "${local.prefix}-svcplan"
+  location            = local.resource_groups_L2.WSTE_KB.location
+  resource_group_name = local.resource_groups_L2.WSTE_KB.name
+  sku {
+    //Only get one Free/F1.  Shared/Free need use_32_bit_worker_process = true in the application service 
+    tier = var.qna_tier
+    size = var.qna_size
+
+  }
+  tags = var.tags
+}

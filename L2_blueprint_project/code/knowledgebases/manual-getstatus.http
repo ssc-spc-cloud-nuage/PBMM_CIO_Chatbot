@@ -1,0 +1,4 @@
+POST https://westus.api.cognitive.microsoft.com/qnamaker/v4.0/operations/dce97edb-77a3-4af1-a9ec-985146805aef
+Host: westus.api.cognitive.microsoft.com
+Content-Type: application/json
+Ocp-Apim-Subscription-Key: a931431da3f849849299ecfc8f5f39d0

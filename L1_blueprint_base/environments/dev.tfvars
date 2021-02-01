@@ -8,7 +8,7 @@ tags = {
   "branch"            = "CIO"
 }
 
-env     = "ScSc"
+env     = "ScDc"
 group   = "CIO"
 project = "Chatbot"
 
@@ -18,7 +18,7 @@ deployOptionalFeatures = {
   ddos_protection_plan       = false
   defaultRoute               = false
   recovery_services_vault    = false
-  security_center            = true
+  security_center            = false
   sentinel                   = false
   update_management          = false
   deny_publicip_policy       = false

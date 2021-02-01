@@ -3,7 +3,7 @@
 #
 # Hope a future update to the rover can address this in the future.
 
-env     = "ScSc"
+env     = "ScDc"
 group   = "CIO"
 project = "Chatbot"
 
