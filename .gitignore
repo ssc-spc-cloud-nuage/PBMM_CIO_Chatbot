@@ -3,3 +3,4 @@
 *.stackdump
 errored.tfstate
 cache
+cache.*
