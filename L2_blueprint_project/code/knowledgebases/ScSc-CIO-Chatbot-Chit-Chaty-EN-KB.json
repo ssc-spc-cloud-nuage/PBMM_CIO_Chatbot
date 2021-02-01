@@ -1,11 +1,13 @@
 {
   "name": "ScSc-CIO-Chatbot-Chit-Chaty-EN-KB",
+
   "qnaList": [],
   "urls": [],
   "files": [
     {
       "fileName": "Chit_Chaty_EN_KB.xlsx",
       "fileUri": "https://github.com/ssc-spc-cloud-nuage/PBMM_CIO_Chatbot/raw/master/L2_blueprint_project/code/knowledgebases/sources/Chit_Chaty_EN_KB.xlsx"
+
     }
   ]
 }

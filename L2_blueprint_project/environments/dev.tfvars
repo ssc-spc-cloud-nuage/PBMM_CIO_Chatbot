@@ -36,6 +36,7 @@ L1_terraform_remote_state_config = {
 cognitiveServicesLocation = "westus"
 
 //Some services do not like underscore in the name
+
 chatbotName = "SSCChatbot"
 
 
@@ -46,6 +47,7 @@ knowledgebaseList = [
      deploy = true
      knowledgebaseLocations = {
        ScSc-CIO-Chatbot-Chit-Chaty-EN-KB = "knowledgebases/ScSc-CIO-Chatbot-Chit-Chaty-EN-KB.json",
+
       // ScSc-CIO-Chatbot-Digital-Lounge-EN-KB = "knowledgebases/ScSc-CIO-Chatbot-Digital-Lounge-EN-KB.json",
        ScSc-CIO-Chatbot-Sample-EN-KB = "knowledgebases/ScSc-CIO-Chatbot-Sample-EN-KB.json"
        //ScSc-CIO-Chatbot-Student-EN-KB= "knowledgebases/ScSc-CIO-Chatbot-Student-EN-KB.json"
@@ -56,6 +58,7 @@ knowledgebaseList = [
       deploy = true
       knowledgebaseLocations = {
         ScSc-CIO-Chatbot-Chit-Chaty-FR-KB = "knowledgebases/ScSc-CIO-Chatbot-Chit-Chaty-FR-KB.json",
+
         //ScSc-CIO-Chatbot-Digital-Lounge-FR-KB = "knowledgebases/ScSc-CIO-Chatbot-Digital-Lounge-FR-KB.json",
         ScSc-CIO-Chatbot-Sample-FR-KB = "knowledgebases/ScSc-CIO-Chatbot-Sample-FR-KB.json"
         //ScSc-CIO-Chatbot-Student-FR-KB = "knowledgebases/ScSc-CIO-Chatbot-Student-FR-KB.json"
@@ -72,6 +75,7 @@ knowledgebaseList = [
 //englishKBLanguageCode = "EN"
 
 //frenchKBLanguageCode = "FR"
+
 
 qna_tier = "Shared"
 

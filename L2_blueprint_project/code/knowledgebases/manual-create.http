@@ -1,11 +1,13 @@
 POST https://westus.api.cognitive.microsoft.com/qnamaker/v4.0/knowledgebases/create 
 Host: westus.api.cognitive.microsoft.com
 Content-Type: application/json
+
 Ocp-Apim-Subscription-Key: a931431da3f849849299ecfc8f5f39d0
 
 {
   "name": "QnA Maker FAQ999",
   "qnaList": [
+
    
   ],
   "urls": [
@@ -15,6 +17,7 @@ Ocp-Apim-Subscription-Key: a931431da3f849849299ecfc8f5f39d0
     {
       "fileName": "Sample_KB_FR.xlsx",
       "fileUri": "https://github.com/ssc-spc-cloud-nuage/PBMM_CIO_Chatbot/raw/master/L2_blueprint_project/code/knowledgebases/sources/Sample_KB_FR.xlsx"
+
     }
   ]
 }
