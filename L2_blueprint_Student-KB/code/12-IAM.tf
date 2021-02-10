@@ -22,8 +22,14 @@ resource "azurerm_role_assignment" "L2_RG_Owner" {
   principal_id         = module.RG_AADSGs.azuread_groups.Owners.id
 }
 
+resource "azurerm_role_assignment" "L2_RG_Montoring_Contributor" {
+  scope                = local.resource_groups_L2.Student_KB.id
+  role_definition_name = "Monitoring Contributor"
+  principal_id         = module.RG_AADSGs.azuread_groups.Owners.id
+}
+
 resource "azurerm_role_assignment" "L2_RG_Contributors" {
   scope                = local.resource_groups_L2.Student_KB.id
-  role_definition_name = "Contributor"
+  role_definition_name = "Cognitive Services User"
   principal_id         = module.RG_AADSGs.azuread_groups.Contributors.id
 }

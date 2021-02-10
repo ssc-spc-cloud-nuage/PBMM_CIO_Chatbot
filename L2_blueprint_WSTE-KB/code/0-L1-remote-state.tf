@@ -20,8 +20,8 @@ data "terraform_remote_state" "L1" {
 locals {
   resource_groups_L1 = data.terraform_remote_state.L1.outputs.resource_groups_L1
   //subnets                      = data.terraform_remote_state.L1.outputs.subnets
-  Project-law    = data.terraform_remote_state.L1.outputs.Project-law
-  Project_law-sa = data.terraform_remote_state.L1.outputs.Project_law-sa
+  Project-law = data.terraform_remote_state.L1.outputs.Project-law
+  #Project_law-sa = data.terraform_remote_state.L1.outputs.Project_law-sa
   //Project-kv                   = data.terraform_remote_state.L1.outputs.Project-kv
   L2_Subscription_Contributors = data.terraform_remote_state.L1.outputs.L2_Subscription_Contributors
   L2_Subscription_Readers      = data.terraform_remote_state.L1.outputs.L2_Subscription_Readers

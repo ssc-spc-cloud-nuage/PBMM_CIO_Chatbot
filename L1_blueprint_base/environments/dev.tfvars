@@ -18,11 +18,11 @@ deployOptionalFeatures = {
   ddos_protection_plan       = false
   defaultRoute               = false
   recovery_services_vault    = false
-  security_center            = false
+  security_center            = true
   sentinel                   = false
   update_management          = false
   deny_publicip_policy       = false
-  diagnostics_policy         = false
+  diagnostics_policy         = true
   flow_logs_policy           = false
 }
 

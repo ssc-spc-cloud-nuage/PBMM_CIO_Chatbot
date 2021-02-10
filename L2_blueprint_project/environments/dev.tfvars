@@ -17,7 +17,9 @@ location = "canadacentral"
 
 L2_RBAC = {
   contributorEnterpriseID = []
-  ownerNames = []
+  ownerNames = ["John.Nephin@ssc-spc.gc.ca",
+    "Bernard.Maltais@ssc-spc.gc.ca",
+    "Patrick.Heard@ssc-spc.gc.ca"]
   contributorNames = []
   readerNames = []
 }

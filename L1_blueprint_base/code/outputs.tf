@@ -13,10 +13,10 @@ output "Project-law" {
   sensitive = true
 }
 
-output "Project_law-sa" {
-  value     = module.Project_law-sa.object
-  sensitive = true
-}
+#output "Project_law-sa" {
+#  value     = module.Project_law-sa.object
+#  sensitive = true
+#}
 
 /*output "Project-kv" {
   value     = local.Project-kv

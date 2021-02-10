@@ -68,7 +68,9 @@ L2_RG_RBAC = {
     "Luc.Theberge@ssc-spc.gc.ca"
   ]
   ownerNames = [
-    "john.nephin@ssc-spc.gc.ca"
+    "john.nephin@ssc-spc.gc.ca",
+    "Bernard.Maltais@ssc-spc.gc.ca",
+    "Patrick.Heard@ssc-spc.gc.ca"
   ]
 }
 
