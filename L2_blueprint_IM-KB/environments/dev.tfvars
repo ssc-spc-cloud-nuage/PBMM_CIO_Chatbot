@@ -59,7 +59,7 @@ knowledgebaseList = [
 
 L2_RG_RBAC = {
   contributorNames = [
-     
+     "john.nephin@ssc-spc.gc.ca"
   ]
   ownerNames = [
     "john.nephin@ssc-spc.gc.ca",

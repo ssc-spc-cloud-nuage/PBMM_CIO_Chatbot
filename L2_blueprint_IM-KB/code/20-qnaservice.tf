@@ -3,7 +3,7 @@
 //Only windows is available via the portal deploy from qnamaker.ai
 module "ScSc-CIO-Chatbot-IM-EN-KB" {
   //  for_each                  = local.deployList
-  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210201-dev"
+  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210210.2"
   location                  = local.resource_groups_L2.IM_KB.location
   cognitiveServicesLocation = var.cognitiveServicesLocation
   resourceGroupName         = local.resource_groups_L2.IM_KB.name
@@ -21,7 +21,7 @@ module "ScSc-CIO-Chatbot-IM-EN-KB" {
 
 module "ScSc-CIO-Chatbot-IM-FR-KB" {
   //  for_each                  = local.deployList
-  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210201-dev"
+  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210210.2"
   location                  = local.resource_groups_L2.IM_KB.location
   cognitiveServicesLocation = var.cognitiveServicesLocation
   resourceGroupName         = local.resource_groups_L2.IM_KB.name

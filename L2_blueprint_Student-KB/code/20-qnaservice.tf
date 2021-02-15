@@ -4,7 +4,7 @@
 //Only windows is available via the portal deploy from qnamaker.ai
 module "ScSc-CIO-Chatbot-Student-EN-KB" {
   //for_each                  = local.deployList
-  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20201019.1"
+  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210211.2"
   location                  = local.resource_groups_L2.Student_KB.location
   cognitiveServicesLocation = var.cognitiveServicesLocation
   resourceGroupName         = local.resource_groups_L2.Student_KB.name
@@ -16,12 +16,14 @@ module "ScSc-CIO-Chatbot-Student-EN-KB" {
   account_sku               = var.account_sku
   tags                      = var.tags
   plan_id                   = azurerm_app_service_plan.Chatbot-svcplan.id
+  search_service            = var.search_service_en
+  search_service_key        = var.search_service_key_en
 }
 
 
 module "ScSc-CIO-Chatbot-Student-FR-KB" {
   //for_each                  = local.deployList
-  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20201019.1"
+  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210211.2"
   location                  = local.resource_groups_L2.Student_KB.location
   cognitiveServicesLocation = var.cognitiveServicesLocation
   resourceGroupName         = local.resource_groups_L2.Student_KB.name
@@ -32,6 +34,8 @@ module "ScSc-CIO-Chatbot-Student-FR-KB" {
   search_sku                = var.search_sku
   account_sku               = var.account_sku
   tags                      = var.tags
-  plan_id                   = module.ScSc-CIO-Chatbot-Student-EN-KB.plan_id
+  plan_id                   = azurerm_app_service_plan.Chatbot-svcplan.id
+  search_service            = var.search_service_en
+  search_service_key        = var.search_service_key_en
 }
 

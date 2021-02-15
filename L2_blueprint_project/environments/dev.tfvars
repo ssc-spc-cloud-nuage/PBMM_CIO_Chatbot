@@ -87,11 +87,11 @@ search_sku = "standard"
 
 account_sku  = "S0"
 
-bot_tier = "Standard"
+bot_tier = "Shared"
 
-bot_size = "S1"
+bot_size = "D1"
 
-bot_sku = "S1"
+bot_sku = "D1"
 
 zipUrl = "https://bot-framework.azureedge.net/static/137365-f175dfa671/bot-packages/v1.3.27-135455/csharp-abs-webapp-v4_qnabot_precompiled.zip"
 

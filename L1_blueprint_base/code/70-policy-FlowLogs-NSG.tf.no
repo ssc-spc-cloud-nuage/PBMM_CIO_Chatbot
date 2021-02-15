@@ -198,16 +198,16 @@ resource "azurerm_policy_assignment" "Deploy-NSG-FlowLogs" {
     "workspaceResourceId": {
       "value": "${local.Project-law.id}"
     },
+    "storageAccountResourceId": {
+    "value": "${local.Project_law-sa.id}"
+  },
     "trafficAnalyticsInterval": {
       "value": 10
     }
   }
 PARAMETERS
 }
-#Took this out from above, not used - JN.
-#"storageAccountResourceId": {
-#"value": "${local.Project_law-sa.id}"
-#},
+
 
 # Giving the SystemAssigned identity the ability to enforce the policy
 

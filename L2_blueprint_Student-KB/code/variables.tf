@@ -13,10 +13,10 @@ variable "L1_terraform_remote_state_config" {}
 
 #
 
-variable lowerlevel_storage_account_name {}
-variable lowerlevel_resource_group_name {}
-variable lowerlevel_container_name {}
-variable lowerlevel_key {}
+variable "lowerlevel_storage_account_name" {}
+variable "lowerlevel_resource_group_name" {}
+variable "lowerlevel_container_name" {}
+variable "lowerlevel_key" {}
 
 
 variable "chatbotName" {
@@ -64,3 +64,8 @@ variable "ownerNames" {}
 
 variable "appId" {}
 variable "appPassword" {}
+
+variable "search_service_en" {}
+variable "search_service_key_en" {}
+variable "search_service_fr" {}
+variable "search_service_key_fr" {}

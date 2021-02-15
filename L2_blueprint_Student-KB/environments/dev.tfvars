@@ -93,3 +93,8 @@ ownerNames = ["ScDc-PBMM-Terraform_John.Nephin", "Terraform-CIO-Automation-SP"]
 //Needs to be unique to a bot.  See https://docs.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-azure?view=azure-bot-service-3.0#how-do-i-create-my-own-app-registration for creation
 appId = "e8a7e9c5-2017-482d-b8a6-cb9b70ffec04"
 appPassword ="GBn.mrT6I~8pKhx7L.an53P-9BR1n_gy6f"
+
+search_service_en = "scdcciochatbotensvc5g6r6a9sqfvq-ss"
+search_service_key_en = "1162FEBF9E62F2E874EB764684F2BE22"
+search_service_fr = "scdcciochatbotfrsvcyby9rbgy64rt-ss"
+search_service_key_fr = "2220F77EC936A3FD91DC080810437DE1"

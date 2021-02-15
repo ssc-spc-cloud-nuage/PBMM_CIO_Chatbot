@@ -1,0 +1,410 @@
+resource "azurerm_monitor_diagnostic_setting" "ScSc-CIO-Chatbot-EN-KB-Diagnostic-logs" {
+  name                       = "ScSc-CIO-Chatbot-EN-KB-Diagnostic-logs"
+  target_resource_id         = module.ScSc-CIO-Chatbot-EN-KB.app_srv.id
+  log_analytics_workspace_id = local.Project-law.id
+
+  log {
+    category = "AppServiceAntivirusScanAuditLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceHTTPLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceConsoleLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceAppLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceFileAuditLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServicePlatformLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceAuditLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceIPSecAuditLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+
+  metric {
+    category = "AllMetrics"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+}
+
+resource "azurerm_monitor_diagnostic_setting" "ScSc-CIO-Chatbot-FR-KB-Diagnostic-logs" {
+  name                       = "ScSc-CIO-Chatbot-FR-KB-Diagnostic-logs"
+  target_resource_id         = module.ScSc-CIO-Chatbot-FR-KB.app_srv.id
+  log_analytics_workspace_id = local.Project-law.id
+
+  log {
+    category = "AppServiceAntivirusScanAuditLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceHTTPLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceConsoleLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceAppLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceFileAuditLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServicePlatformLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceAuditLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceIPSecAuditLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+
+  metric {
+    category = "AllMetrics"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+}
+
+
+#Cognative Services Diagnostics
+resource "azurerm_monitor_diagnostic_setting" "ScDc-CIO-Chatbot-EN-Cognative-Diagnostic-logs" {
+  name                       = "ScDc-CIO-Chatbot-EN-Cognative-Diagnostic-logs"
+  target_resource_id         = module.ScSc-CIO-Chatbot-EN-KB.cognitive_account.id
+  log_analytics_workspace_id = local.Project-law.id
+
+  log {
+    category = "Audit"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "RequestResponse"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+
+  metric {
+    category = "AllMetrics"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
+  }
+}
+
+resource "azurerm_monitor_diagnostic_setting" "ScDc-CIO-Chatbot-FR-Cognative-Diagnostic-logs" {
+  name                       = "ScDc-CIO-Chatbot-FR-Cognative-Diagnostic-logs"
+  target_resource_id         = module.ScSc-CIO-Chatbot-FR-KB.cognitive_account.id
+  log_analytics_workspace_id = local.Project-law.id
+
+  log {
+    category = "Audit"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+
+  log {
+    category = "RequestResponse"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  metric {
+    category = "AllMetrics"
+    enabled  = true
+
+    retention_policy {
+      enabled = false
+      days    = 0
+    }
+  }
+}
+
+
+#ChatbotApp Diagnostics
+resource "azurerm_monitor_diagnostic_setting" "ScDc-CIO-Chatbot-svc-Diagnostic-logs" {
+  name                       = "ScDc-CIO-Chatbot-svc-Diagnostic-logs"
+  target_resource_id         = module.Chatbot-App.ChatbotApp.outputs["id"]
+  log_analytics_workspace_id = local.Project-law.id
+
+  log {
+    category = "AppServiceAntivirusScanAuditLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceHTTPLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceConsoleLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceAppLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceFileAuditLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServicePlatformLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceAuditLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  log {
+    category = "AppServiceIPSecAuditLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+
+
+  metric {
+    category = "AllMetrics"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+}
+
+#Search Service Diagnostics
+resource "azurerm_monitor_diagnostic_setting" "Search-Service-EN-Diagnostic-logs" {
+  name                       = "ScDc-CIO-Search-Service-EN-Diagnostic-logs"
+  target_resource_id         = module.ScSc-CIO-Chatbot-EN-KB.search_service[0].id
+  log_analytics_workspace_id = local.Project-law.id
+
+  log {
+    category = "OperationLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  metric {
+    category = "AllMetrics"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+}
+
+resource "azurerm_monitor_diagnostic_setting" "Search-Service-FR-Diagnostic-logs" {
+  name                       = "ScDc-CIO-Search-Service-FR-Diagnostic-logs"
+  target_resource_id         = module.ScSc-CIO-Chatbot-FR-KB.search_service[0].id
+  log_analytics_workspace_id = local.Project-law.id
+
+  log {
+    category = "OperationLogs"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+  metric {
+    category = "AllMetrics"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+}
+
+#Diagnostics Service Plan - azurerm_app_service_plan.Chatbot-svcplan.id
+resource "azurerm_monitor_diagnostic_setting" "ScDc-CIO-Chatbot-app-svcplan-Diagnostic-logs" {
+  name                       = "ScDc-CIO-Chatbot-app-svcplan-Diagnostic-logs"
+  target_resource_id         = azurerm_app_service_plan.Chatbot-svcplan.id
+  log_analytics_workspace_id = local.Project-law.id
+
+
+  metric {
+    category = "AllMetrics"
+    enabled  = true
+
+    retention_policy {
+      enabled = true
+      days    = 30
+    }
+  }
+}

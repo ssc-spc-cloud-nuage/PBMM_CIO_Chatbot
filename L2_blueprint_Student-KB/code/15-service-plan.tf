@@ -1,4 +1,4 @@
-//Will sharte a plan between EN and FR
+//Will share a plan between EN and FR
 resource "azurerm_app_service_plan" "Chatbot-svcplan" {
   name                = "${local.prefix}-svcplan"
   location            = local.resource_groups_L2.Student_KB.location
