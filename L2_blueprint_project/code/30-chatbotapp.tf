@@ -1,3 +1,4 @@
+#In here it is Chit Chatty that is set but in dev it was the Student KB.
 
 #For the french KB and others the bot application will need a dispatch created.
 module "Chatbot-App" {

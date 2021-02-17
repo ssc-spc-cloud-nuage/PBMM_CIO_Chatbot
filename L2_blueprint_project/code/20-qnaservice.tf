@@ -10,7 +10,7 @@
 module "ScSc-CIO-Chatbot-EN-KB" {
   //for_each                  = local.deployList
 
-  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210211.2"
+  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210217.1"
   location                  = local.resource_groups_L2.Project.location
   cognitiveServicesLocation = var.cognitiveServicesLocation
   resourceGroupName         = local.resource_groups_L2.Project.name
@@ -29,7 +29,7 @@ module "ScSc-CIO-Chatbot-EN-KB" {
 
 module "ScSc-CIO-Chatbot-FR-KB" {
   //for_each                  = local.deployList
-  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210211.2"
+  source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210217.1"
   location                  = local.resource_groups_L2.Project.location
   cognitiveServicesLocation = var.cognitiveServicesLocation
   resourceGroupName         = local.resource_groups_L2.Project.name
