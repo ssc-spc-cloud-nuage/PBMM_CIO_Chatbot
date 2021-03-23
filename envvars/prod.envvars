@@ -1,0 +1,4 @@
+# Uncomment and set the environment variable below to the subscription id you wish to deploy the
+# launchpad into
+
+ LAUNCHPAD_SUBSCRIPTION="852f39b8-db15-44dc-bc7a-bfa5ace7bce3"
