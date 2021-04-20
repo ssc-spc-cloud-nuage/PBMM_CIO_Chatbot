@@ -118,11 +118,13 @@ resource "azurerm_role_assignment" "L2_RG_Contributors_ITPro" {
   principal_id         = module.RG_AADSGs_ITPro.azuread_groups.Contributors.id
 }
 
+
 resource "azuread_group_member" "L2_RG_Contributors_ITPro_members" {
   for_each         = toset(var.L2_RBAC.memberIDsITPro)
   group_object_id  = module.RG_AADSGs_ITPro.azuread_groups.Contributors.id
   member_object_id = each.key
 }
+
 
 #Print
 module "RG_AADSGs_PP" {
