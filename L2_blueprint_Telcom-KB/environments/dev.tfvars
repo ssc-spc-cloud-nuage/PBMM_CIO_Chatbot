@@ -18,13 +18,16 @@ location = "canadacentral"
 # Daniel Vinette - 0ee62451-9b14-4e27-b0bf-d5aa6fc83c40
 #Sébastien Robitaille - ebbfa5d6-0fd4-4ce0-b040-d72166582059
 # Andrew Fairbairn  - 5a2a1347-0074-4c46-b522-a27be0211770
+# Jason Pantalone - 4f6b8ee2-9321-4bf8-8920-a625681ed17e
+# Maher Sabanegh  - c940066c-2e03-4e74-9a1a-bc856255398f
 L2_RBAC = {
   contributorEnterpriseID = []
   contributorNames = ["john.nephin@ssc-spc.gc.ca"]
   readerNames = []
-  memberIDsHW = ["0ee62451-9b14-4e27-b0bf-d5aa6fc83c40"]
-  memberIDsSW = ["ebbfa5d6-0fd4-4ce0-b040-d72166582059"]
-  memberIDsPP = ["5a2a1347-0074-4c46-b522-a27be0211770"]
+  memberIDsHW = ["0ee62451-9b14-4e27-b0bf-d5aa6fc83c40", "4f6b8ee2-9321-4bf8-8920-a625681ed17e"]
+  memberIDsSW = ["ebbfa5d6-0fd4-4ce0-b040-d72166582059", "4f6b8ee2-9321-4bf8-8920-a625681ed17e"]
+  memberIDsPP = ["5a2a1347-0074-4c46-b522-a27be0211770", "4f6b8ee2-9321-4bf8-8920-a625681ed17e"]
+  memberIDsITPro = ["c940066c-2e03-4e74-9a1a-bc856255398f", "4f6b8ee2-9321-4bf8-8920-a625681ed17e"]
 }
 
 
