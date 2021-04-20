@@ -48,22 +48,22 @@ knowledgebaseList = [
      languageCode = "EN",
      deploy = true
      knowledgebaseLocations = {
-       ScSc-CIO-Chatbot-Chit-Chaty-EN-KB = "knowledgebases/ScSc-CIO-Chatbot-Chit-Chaty-EN-KB.json",
+       ScPc-CIO-Chatbot-Chit-Chaty-EN-KB = "knowledgebases/ScPc-CIO-Chatbot-Chit-Chaty-EN-KB.json",
 
-      // ScSc-CIO-Chatbot-Digital-Lounge-EN-KB = "knowledgebases/ScSc-CIO-Chatbot-Digital-Lounge-EN-KB.json",
-       ScSc-CIO-Chatbot-Sample-EN-KB = "knowledgebases/ScSc-CIO-Chatbot-Sample-EN-KB.json"
-       //ScSc-CIO-Chatbot-Student-EN-KB= "knowledgebases/ScSc-CIO-Chatbot-Student-EN-KB.json"
+      // ScSc-CIO-Chatbot-Digital-Lounge-EN-KB = "knowledgebases/ScPc-CIO-Chatbot-Digital-Lounge-EN-KB.json",
+       //ScPc-CIO-Chatbot-Sample-EN-KB = "knowledgebases/ScPc-CIO-Chatbot-Sample-EN-KB.json"
+       //ScPc-CIO-Chatbot-Student-EN-KB= "knowledgebases/ScPc-CIO-Chatbot-Student-EN-KB.json"
      },
    },
    {
       languageCode = "FR"
       deploy = true
       knowledgebaseLocations = {
-        ScSc-CIO-Chatbot-Chit-Chaty-FR-KB = "knowledgebases/ScSc-CIO-Chatbot-Chit-Chaty-FR-KB.json",
+        ScPc-CIO-Chatbot-Chit-Chaty-FR-KB = "knowledgebases/ScPc-CIO-Chatbot-Chit-Chaty-FR-KB.json",
 
-        //ScSc-CIO-Chatbot-Digital-Lounge-FR-KB = "knowledgebases/ScSc-CIO-Chatbot-Digital-Lounge-FR-KB.json",
-        ScSc-CIO-Chatbot-Sample-FR-KB = "knowledgebases/ScSc-CIO-Chatbot-Sample-FR-KB.json"
-        //ScSc-CIO-Chatbot-Student-FR-KB = "knowledgebases/ScSc-CIO-Chatbot-Student-FR-KB.json"
+        //ScPc-CIO-Chatbot-Digital-Lounge-FR-KB = "knowledgebases/ScPc-CIO-Chatbot-Digital-Lounge-FR-KB.json",
+        //ScPc-CIO-Chatbot-Sample-FR-KB = "knowledgebases/ScSc-CIO-Chatbot-Sample-FR-KB.json"
+        //ScPc-CIO-Chatbot-Student-FR-KB = "knowledgebases/ScPc-CIO-Chatbot-Student-FR-KB.json"
       }
    }
 ]

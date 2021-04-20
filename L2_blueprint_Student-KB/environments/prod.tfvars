@@ -45,14 +45,14 @@ knowledgebaseList = [
      languageCode = "EN",
      deploy = true
      knowledgebaseLocations = {
-       ScSc-CIO-Chatbot-Student-EN-KB= "knowledgebases/ScSc-CIO-Chatbot-Student-EN-KB.json"       
+       ScPc-CIO-Chatbot-Student-EN-KB= "knowledgebases/ScPc-CIO-Chatbot-Student-EN-KB.json"       
      },
    },
    {
       languageCode = "FR"
       deploy = true
       knowledgebaseLocations = {
-        ScSc-CIO-Chatbot-Student-FR-KB= "knowledgebases/ScSc-CIO-Chatbot-Student-FR-KB.json"
+        ScPc-CIO-Chatbot-Student-FR-KB= "knowledgebases/ScPc-CIO-Chatbot-Student-FR-KB.json"
       }
    }
 ]
