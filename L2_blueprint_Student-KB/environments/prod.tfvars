@@ -94,7 +94,7 @@ ownerNames = ["ScDc-PBMM-Terraform_John.Nephin", "Terraform-CIO-Automation-SP"]
 appId = "1eb303b2-55f6-4cf7-a306-086d68bd329d"
 appPassword ="94zXYhK-mvEYsefFxA.cM_Y77h6_VKRNnP"
 
-search_service_en = "scpcciochatbotensvcu1e5vjvur5yk-ss"
-search_service_key_en = "46C39126F1179F3BA84F93BFD8DA0023"
-search_service_fr = "scpcciochatbotfrsvcc368rx4kkv0p-ss"
-search_service_key_fr = "42132E298158F64F732F04D92D687329"
+search_service_en = "scpcciochatbotensvcvcd5vl0aztcr-ss"
+search_service_key_en = "07168D2AEA642DF40DB508A555ACD2BD"
+search_service_fr = "scpcciochatbotfrsvcu04yn3vd7kp6-ss"
+search_service_key_fr = "84B375638D9F76D38CC5B9B839A80210"

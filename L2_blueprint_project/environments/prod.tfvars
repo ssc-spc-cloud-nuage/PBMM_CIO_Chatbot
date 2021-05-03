@@ -103,4 +103,4 @@ ownerNames = ["ScDc-PBMM-Terraform_John.Nephin", "Terraform-CIO-Automation-SP"]
 
 //Needs to be unique to a bot.  See https://docs.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-azure?view=azure-bot-service-3.0#how-do-i-create-my-own-app-registration for creation
 appId = "1eb303b2-55f6-4cf7-a306-086d68bd329d"
-appPassword ="94zXYhK-mvEYsefFxA.cM_Y77h6_VKRNnP"
+appPassword ="I5E~j-v~1r2waqrhYH.94.n40ZHZ-6rA6F"
