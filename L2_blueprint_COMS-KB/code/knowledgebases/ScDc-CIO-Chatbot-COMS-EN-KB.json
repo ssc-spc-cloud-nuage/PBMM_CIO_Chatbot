@@ -1,0 +1,11 @@
+{
+  "name": "ScDc-CIO-Chatbot-COMS-EN-KB",
+  "qnaList": [],
+  "urls": [],
+  "files": [
+    {
+      "fileName": "Student_En_KB.xlsx",
+      "fileUri": "https://github.com/ssc-spc-cloud-nuage/PBMM_CIO_Chatbot/raw/master/L2_blueprint_project/code/knowledgebases/sources/Student_En_KB.xlsx"
+    }
+  ]
+}
