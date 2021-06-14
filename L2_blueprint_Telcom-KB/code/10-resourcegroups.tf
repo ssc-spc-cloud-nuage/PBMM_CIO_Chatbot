@@ -1,6 +1,10 @@
 locals {
   rglist = {
-    Telcom_KB = { userDefinedString = "${local.userDefinedStringPrefix}_KB" }
+    Telcom_HW_KB    = { userDefinedString = "${local.userDefinedStringPrefix}_HW_KB" },
+    Telcom_ITPro_KB = { userDefinedString = "${local.userDefinedStringPrefix}_ITPro_KB" },
+    Telcom_Common   = { userDefinedString = "${local.userDefinedStringPrefix}_Common_KB" },
+    Telcom_SW_KB    = { userDefinedString = "${local.userDefinedStringPrefix}_SW_KB" },
+    Telcom_PP_KB    = { userDefinedString = "${local.userDefinedStringPrefix}_PP_KB" }
   }
 }
 

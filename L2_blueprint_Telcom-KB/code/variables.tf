@@ -19,8 +19,8 @@ variable "lowerlevel_container_name" {}
 variable "lowerlevel_key" {}
 
 
-//variable "chatbotName" {
-//}
+variable "chatbotName" {
+}
 
 variable "knowledgebaseList" {}
 
@@ -69,5 +69,3 @@ variable "search_service_en" {}
 variable "search_service_key_en" {}
 variable "search_service_fr" {}
 variable "search_service_key_fr" {}
-
-variable "app_service_plan_id" {}
