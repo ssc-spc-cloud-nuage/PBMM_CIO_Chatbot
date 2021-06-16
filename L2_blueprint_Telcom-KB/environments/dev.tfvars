@@ -126,11 +126,7 @@ knowledgebaseList = [
 
 L2_RG_RBAC = {
   contributorNames = [
-<<<<<<< HEAD
-    "john.nephin@ssc-spc.gc.ca"
-=======
      "john.nephin@ssc-spc.gc.ca",  "stephane.robinson@ssc-spc.gc.ca", "alain.goyette@ssc-spc.gc.ca", "don.aker@ssc-spc.gc.ca"
->>>>>>> f5265a6b3dc87264297ffa91c2b2a3e2fce24eca
   ]
   ownerNames = [
     "john.nephin@ssc-spc.gc.ca",
@@ -140,11 +136,7 @@ L2_RG_RBAC = {
 
 qna_tier = "Shared"
 
-<<<<<<< HEAD
-qna_size = "D1"
-=======
 qna_size = "B1"
->>>>>>> f5265a6b3dc87264297ffa91c2b2a3e2fce24eca
 
 search_sku = "standard"
 
@@ -171,10 +163,4 @@ appPassword ="GBn.mrT6I~8pKhx7L.an53P-9BR1n_gy6f"
 search_service_en = "scdcciochatbotensvc5g6r6a9sqfvq-ss"
 search_service_key_en = "1162FEBF9E62F2E874EB764684F2BE22"
 search_service_fr = "scdcciochatbotfrsvcyby9rbgy64rt-ss"
-<<<<<<< HEAD
 search_service_key_fr = "2220F77EC936A3FD91DC080810437DE1"
-
-app_service_plan_id = "/subscriptions/6425f0ed-3443-4139-8361-9b8d3951d43e/resourceGroups/ScDc-CIO_Chatbot_Project-rg/providers/Microsoft.Web/serverfarms/ScDc-CIO-Chatbot-svcplan"
-=======
-search_service_key_fr = "2220F77EC936A3FD91DC080810437DE1"
->>>>>>> f5265a6b3dc87264297ffa91c2b2a3e2fce24eca
