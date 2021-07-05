@@ -8,17 +8,17 @@ tags = {
   "branch"            = "CIO"
 }
 
-env     = "ScPc"
+env     = "ScDc"
 group   = "CIO"
-project = "Chatbot_Dashboard"
+project = "Chatbot_Sharedfeedback"
 
 location = "canadacentral"
 
 L1_terraform_remote_state_config = {
-    key                   = "L1_blueprint_base_prod.tfstate" # <========= Don't forget to update with the env name
+    key                   = "L1_blueprint_base_dev.tfstate" # <========= Don't forget to update with the env name
 }
 
-template_file = "dash-prod.tpl"
+template_file = "dash-dev.tpl"
 L2_RBAC = {
   contributorEnterpriseID = []
   ownerNames = ["john.nephin@ssc-spc.gc.ca", "Bernard.Maltais@ssc-spc.gc.ca","Peter.Thiessen@ssc-spc.gc.ca"]

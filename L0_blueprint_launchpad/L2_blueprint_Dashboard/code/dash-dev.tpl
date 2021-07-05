@@ -1,4 +1,4 @@
-{
+ {
     "lenses": {
       "0": {
         "order": 0,
@@ -7,7 +7,7 @@
             "position": {
               "x": 0,
               "y": 0,
-              "colSpan": 12,
+              "colSpan": 14,
               "rowSpan": 4
             },
             "metadata": {
@@ -24,19 +24,17 @@
                   "name": "Scope",
                   "value": {
                     "resourceIds": [
-                      "/subscriptions/852f39b8-db15-44dc-bc7a-bfa5ace7bce3/resourceGroups/ScPc-CIO_Chatbot_Project-rg/providers/Microsoft.Insights/components/ScPc-CIO-Chatbot-app-appi",
-                      "/subscriptions/852f39b8-db15-44dc-bc7a-bfa5ace7bce3/resourceGroups/ScPc-CIO_Chatbot_Project-rg/providers/microsoft.insights/components/ScPc-CIO-Chatbot-EN-svc",
-                      "/subscriptions/852f39b8-db15-44dc-bc7a-bfa5ace7bce3/resourceGroups/ScPc-CIO_Chatbot_Project-rg/providers/Microsoft.Insights/components/ScPc-CIO-Chatbot-EN-svc-appi",
-                      "/subscriptions/852f39b8-db15-44dc-bc7a-bfa5ace7bce3/resourceGroups/ScPc-CIO_Chatbot_Project-rg/providers/microsoft.insights/components/ScPc-CIO-Chatbot-FR-svc",
-                      "/subscriptions/852f39b8-db15-44dc-bc7a-bfa5ace7bce3/resourceGroups/ScPc-CIO_Chatbot_Project-rg/providers/Microsoft.Insights/components/ScPc-CIO-Chatbot-FR-svc-appi",
-                      "/subscriptions/852f39b8-db15-44dc-bc7a-bfa5ace7bce3/resourceGroups/scpc-cio_chatbot_project-rg/providers/microsoft.insights/components/ScPc-CIO-Chatbot-svc"
+                      "/subscriptions/6425f0ed-3443-4139-8361-9b8d3951d43e/resourceGroups/ScDc-CIO_Chatbot_Project-rg/providers/microsoft.insights/components/ScDc-CIO-Chatbot-svc",
+                      "/subscriptions/6425f0ed-3443-4139-8361-9b8d3951d43e/resourceGroups/ScDc-CIO_Chatbot_Project-rg/providers/Microsoft.Insights/components/ScDc-CIO-Chatbot-app-appi",
+                      "/subscriptions/6425f0ed-3443-4139-8361-9b8d3951d43e/resourceGroups/ScDc-CIO_Chatbot_Project-rg/providers/Microsoft.Insights/components/ScDc-CIO-Chatbot-EN-svc-appi",
+                      "/subscriptions/6425f0ed-3443-4139-8361-9b8d3951d43e/resourceGroups/ScDc-CIO_Chatbot_Project-rg/providers/Microsoft.Insights/components/ScDc-CIO-Chatbot-FR-svc-appi"
                     ]
                   },
                   "isOptional": true
                 },
                 {
                   "name": "PartId",
-                  "value": "2bd1bdd5-5fa2-458e-9a4e-d72110107967",
+                  "value": "96e580f0-444d-4856-9b14-59d64be8609b",
                   "isOptional": true
                 },
                 {
@@ -46,7 +44,7 @@
                 },
                 {
                   "name": "TimeRange",
-                  "value": "P1D",
+                  "value": "P30D",
                   "isOptional": true
                 },
                 {
@@ -59,7 +57,7 @@
                 },
                 {
                   "name": "Query",
-                  "value": "requests\n| where url endswith \"generateAnswer\"\n| project timestamp, id, url, resultCode, duration, performanceBucket\n| parse kind = regex url with *\"(?i)knowledgebases/\"KbId\"/generateAnswer\"\n| join kind= inner (\ntraces | extend id = operation_ParentId\n) on id\n| extend question = tostring(customDimensions['Question'])\n| extend answer = tostring(customDimensions['Answer'])\n| extend score = tostring(customDimensions['Score'])\n| project question, answer, score\n| summarize any(answer), any(score) by question\n\n",
+                  "value": "requests\n| where url endswith \"generateAnswer\"\n| project timestamp, id, url, resultCode, duration, performanceBucket\n| parse kind = regex url with *\"(?i)knowledgebases/\"KbId\"/generateAnswer\"\n| join kind= inner (\n    traces\n    | extend id = operation_ParentId\n    )\n    on id\n| extend question = tostring(customDimensions['Question'])\n| extend answer = tostring(customDimensions['Answer'])\n| extend score = tostring(customDimensions['Score'])\n| project question, answer, score\n| summarize any(answer), any(score) by question\n\n",
                   "isOptional": true
                 },
                 {
@@ -78,7 +76,7 @@
                 },
                 {
                   "name": "PartSubTitle",
-                  "value": "ScPc-CIO-Chatbot-app-appi",
+                  "value": "ScDc-CIO-Chatbot-svc",
                   "isOptional": true
                 },
                 {
@@ -99,14 +97,14 @@
               "settings": {
                 "content": {
                   "GridColumnsWidth": {
-                    "any_answer": "344px",
-                    "question": "367px"
+                    "question": "410px",
+                    "any_answer": "372px"
                   }
                 }
               },
               "savedContainerState": {
                 "partTitle": "Analytics",
-                "assetName": "ScPc-CIO-Chatbot-app-appi"
+                "assetName": "ScDc-CIO-Chatbot-svc"
               }
             }
           }
@@ -133,14 +131,14 @@
               "model": {
                 "format": "utc",
                 "granularity": "auto",
-                "relative": "24h"
+                "relative": "30d"
               },
               "displayCache": {
                 "name": "UTC Time",
-                "value": "Past 24 hours"
+                "value": "Past 30 days"
               },
               "filteredPartIds": [
-                "StartboardPart-LogsDashboardPart-6cabaf07-ba25-4f72-98cc-3dbed43190a2"
+                "StartboardPart-LogsDashboardPart-288f4922-f325-4ab2-b4b9-92e85073b7dc"
               ]
             }
           }

@@ -10,7 +10,7 @@ tags = {
 
 env     = "ScPc"
 group   = "CIO"
-project = "Chatbot_Dashboard"
+project = "Chatbot_SharedFeedback"
 
 location = "canadacentral"
 

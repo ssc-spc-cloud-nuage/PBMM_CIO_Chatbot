@@ -1,11 +1,10 @@
 locals {
   rglist = {
-
-    Project = { userDefinedString = "${local.userDefinedStringPrefix}_Project" }
+    SharedFeedback = { userDefinedString = "${local.userDefinedStringPrefix}" }
   }
 }
 
-module resource_groups_L2 {
+module "resource_groups_L2" {
   source   = "github.com/canada-ca-terraform-modules/terraform-azurerm-caf-resource_groups?ref=v1.1.0"
   for_each = local.rglist
 
