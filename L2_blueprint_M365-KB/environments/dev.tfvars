@@ -2,15 +2,15 @@ tags = {
   "classification"    = "pbmm"
   "contact"           = "john.nephin@canada.ca"
   "costcentre"        = "566811"
-  "env"               = "prod"
+  "env"               = "dev"
   "owner"             = "john.nephin@canada.ca"
   "cloudusageprofile" = "3"
   "branch"            = "CIO"
 }
 
-env     = "ScPc"
+env     = "ScDc"
 group   = "CIO"
-project = "Chatbot-GWCC"
+project = "Chatbot-M365"
 
 location = "canadacentral"
 
@@ -28,7 +28,7 @@ L2_RBAC = {
 #  - tfstate file: launchpad_opensource_light.tfstate
 
 L1_terraform_remote_state_config = {
-  key = "L1_blueprint_base_prod.tfstate" # <========= Don't forget to update with the env name
+  key = "L1_blueprint_base_dev.tfstate" # <========= Don't forget to update with the env name
 }
 
 //Even though it shows as being available in canada on the web the deployment fails and says it is not.
@@ -45,14 +45,14 @@ knowledgebaseList = [
     languageCode = "EN",
     deploy       = true
     knowledgebaseLocations = {
-      ScPc-CIO-Chatbot-GWCC-EN-KB = "knowledgebases/ScPc-CIO-Chatbot-GWCC-EN-KB.json"
+      ScDc-CIO-Chatbot-GWCC-EN-KB = "knowledgebases/ScDc-CIO-Chatbot-M365-EN-KB.json"
     },
   },
   {
     languageCode = "FR"
     deploy       = true
     knowledgebaseLocations = {
-      ScPc-CIO-Chatbot-GWCC-FR-KB = "knowledgebases/ScPc-CIO-Chatbot-GWCC-FR-KB.json"
+      ScDc-CIO-Chatbot-GWCC-FR-KB = "knowledgebases/ScDc-CIO-Chatbot-M365-FR-KB.json"
     }
   }
 ]
@@ -63,14 +63,13 @@ L2_RG_RBAC = {
   ]
   ownerNames = [
     "john.nephin@ssc-spc.gc.ca",
-    "Bernard.Maltais@ssc-spc.gc.ca",
-    "Patrick.Heard@ssc-spc.gc.ca"
+    "Bernard.Maltais@ssc-spc.gc.ca"
   ]
 }
 
-qna_tier = "Standard"
+qna_tier = "Shared"
 
-qna_size = "S1"
+qna_size = "D1"
 
 search_sku = "standard"
 
@@ -91,12 +90,11 @@ contributorNames = ["John.Nephin@ssc-spc.gc.ca", "Bernard.Maltais@ssc-spc.gc.ca"
 ownerNames = ["ScDc-PBMM-Terraform_John.Nephin", "Terraform-CIO-Automation-SP"]
 
 //Needs to be unique to a bot.  See https://docs.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-azure?view=azure-bot-service-3.0#how-do-i-create-my-own-app-registration for creation
-appId       = "1eb303b2-55f6-4cf7-a306-086d68bd329d"
-appPassword = "94zXYhK-mvEYsefFxA.cM_Y77h6_VKRNnP"
+appId       = "e8a7e9c5-2017-482d-b8a6-cb9b70ffec04"
+appPassword = "GBn.mrT6I~8pKhx7L.an53P-9BR1n_gy6f"
 
-search_service_en     = "scpcciochatbotensvcvcd5vl0aztcr-ss"
-search_service_key_en = "07168D2AEA642DF40DB508A555ACD2BD"
-search_service_fr     = "scpcciochatbotfrsvcu04yn3vd7kp6-ss"
-search_service_key_fr = "84B375638D9F76D38CC5B9B839A80210"
-app_service_plan_id   = "/subscriptions/852f39b8-db15-44dc-bc7a-bfa5ace7bce3/resourceGroups/ScPc-CIO_Chatbot_Project-rg/providers/Microsoft.Web/serverfarms/ScPc-CIO-Chatbot-svcplan"
+search_service_en     = "scdcciochatbotensvc5g6r6a9sqfvq-ss"
+search_service_key_en = "1162FEBF9E62F2E874EB764684F2BE22"
+search_service_fr     = "scdcciochatbotfrsvcyby9rbgy64rt-ss"
+search_service_key_fr = "2220F77EC936A3FD91DC080810437DE1"
 

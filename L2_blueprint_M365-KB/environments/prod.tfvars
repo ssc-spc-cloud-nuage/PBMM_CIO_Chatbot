@@ -10,7 +10,7 @@ tags = {
 
 env     = "ScPc"
 group   = "CIO"
-project = "Chatbot-GWCC"
+project = "Chatbot-M365"
 
 location = "canadacentral"
 
@@ -45,14 +45,14 @@ knowledgebaseList = [
     languageCode = "EN",
     deploy       = true
     knowledgebaseLocations = {
-      ScPc-CIO-Chatbot-GWCC-EN-KB = "knowledgebases/ScPc-CIO-Chatbot-GWCC-EN-KB.json"
+      ScPc-CIO-Chatbot-M365-EN-KB = "knowledgebases/ScPc-CIO-Chatbot-M365-EN-KB.json"
     },
   },
   {
     languageCode = "FR"
     deploy       = true
     knowledgebaseLocations = {
-      ScPc-CIO-Chatbot-GWCC-FR-KB = "knowledgebases/ScPc-CIO-Chatbot-GWCC-FR-KB.json"
+      ScPc-CIO-Chatbot-M365-FR-KB = "knowledgebases/ScPc-CIO-Chatbot-M365-FR-KB.json"
     }
   }
 ]
@@ -99,4 +99,3 @@ search_service_key_en = "07168D2AEA642DF40DB508A555ACD2BD"
 search_service_fr     = "scpcciochatbotfrsvcu04yn3vd7kp6-ss"
 search_service_key_fr = "84B375638D9F76D38CC5B9B839A80210"
 app_service_plan_id   = "/subscriptions/852f39b8-db15-44dc-bc7a-bfa5ace7bce3/resourceGroups/ScPc-CIO_Chatbot_Project-rg/providers/Microsoft.Web/serverfarms/ScPc-CIO-Chatbot-svcplan"
-

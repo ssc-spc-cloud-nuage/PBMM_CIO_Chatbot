@@ -1,12 +1,12 @@
 
 //Seems to only work with Windows.  Linux times out on the endpoint even after an hour
 //Only windows is available via the portal deploy from qnamaker.ai
-module "ScSc-CIO-Chatbot-IM-EN-KB" {
+module "ScSc-CIO-Chatbot-M365-EN-KB" {
   //  for_each                  = local.deployList
   source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210302.1"
-  location                  = local.resource_groups_L2.GWCC_KB.location
+  location                  = local.resource_groups_L2.M365_KB.location
   cognitiveServicesLocation = var.cognitiveServicesLocation
-  resourceGroupName         = local.resource_groups_L2.GWCC_KB.name
+  resourceGroupName         = local.resource_groups_L2.M365_KB.name
   prefix                    = "${local.prefix}-${var.knowledgebaseList[0].languageCode}"
   knowledgebaseList         = var.knowledgebaseList[0].knowledgebaseLocations
   qna_tier                  = var.qna_tier
@@ -19,12 +19,12 @@ module "ScSc-CIO-Chatbot-IM-EN-KB" {
   search_service_key        = var.search_service_key_en
 }
 
-module "ScSc-CIO-Chatbot-GWCC-FR-KB" {
+module "ScSc-CIO-Chatbot-M365-FR-KB" {
   //  for_each                  = local.deployList
   source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210302.1"
-  location                  = local.resource_groups_L2.GWCC_KB.location
+  location                  = local.resource_groups_L2.M365_KB.location
   cognitiveServicesLocation = var.cognitiveServicesLocation
-  resourceGroupName         = local.resource_groups_L2.GWCC_KB.name
+  resourceGroupName         = local.resource_groups_L2.M365_KB.name
   prefix                    = "${local.prefix}-${var.knowledgebaseList[1].languageCode}"
   knowledgebaseList         = var.knowledgebaseList[1].knowledgebaseLocations
   qna_tier                  = var.qna_tier
