@@ -1,7 +1,6 @@
 locals {
   rglist = {
-
-    Project = { userDefinedString = "${local.userDefinedStringPrefix}_Project" }
+    M365_KB = { userDefinedString = "${local.userDefinedStringPrefix}_KB" }
   }
 }
 
