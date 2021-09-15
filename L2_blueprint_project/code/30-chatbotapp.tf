@@ -13,6 +13,7 @@ module "Chatbot-App" {
   QnAKnowledgebaseId  = module.Chatbot-EN-KB.KBList["ScSc-CIO-Chatbot-Chit-Chaty-EN-KB"].triggers.result
   QnAAuthKey          = module.Chatbot-EN-KB.keyList["ScSc-CIO-Chatbot-Chit-Chaty-EN-KB"].triggers.result
 
+
   bot_tier    = var.bot_tier
   bot_size    = var.bot_size
   kind        = var.kind

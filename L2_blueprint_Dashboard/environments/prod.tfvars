@@ -18,6 +18,7 @@ L1_terraform_remote_state_config = {
     key                   = "L1_blueprint_base_prod.tfstate" # <========= Don't forget to update with the env name
 }
 
+
 template_file = "dash-prod.tpl"
 L2_RBAC = {
   contributorEnterpriseID = []
@@ -25,3 +26,4 @@ L2_RBAC = {
   contributorNames = ["john.nephin@ssc-spc.gc.ca","Peter.Thiessen@ssc-spc.gc.ca"]
   readerNames = ["john.nephin@ssc-spc.gc.ca", "Peter.Thiessen@ssc-spc.gc.ca"]
 }
+

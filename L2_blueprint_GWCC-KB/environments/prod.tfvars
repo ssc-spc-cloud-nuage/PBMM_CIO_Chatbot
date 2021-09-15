@@ -41,6 +41,7 @@ chatbotName = "StudentChatbot"
 
 //Required to seed the KB with enough information that the service can set the language properly
 knowledgebaseList = [
+
   {
     languageCode = "EN",
     deploy       = true
@@ -99,4 +100,5 @@ search_service_key_en = "07168D2AEA642DF40DB508A555ACD2BD"
 search_service_fr     = "scpcciochatbotfrsvcu04yn3vd7kp6-ss"
 search_service_key_fr = "84B375638D9F76D38CC5B9B839A80210"
 app_service_plan_id   = "/subscriptions/852f39b8-db15-44dc-bc7a-bfa5ace7bce3/resourceGroups/ScPc-CIO_Chatbot_Project-rg/providers/Microsoft.Web/serverfarms/ScPc-CIO-Chatbot-svcplan"
+
 

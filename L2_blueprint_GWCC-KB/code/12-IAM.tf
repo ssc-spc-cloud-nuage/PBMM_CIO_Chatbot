@@ -6,6 +6,7 @@ module "RG_AADSGs" {
   env = var.env
   azuread_groupsMap = {
     Contributors = {
+
       userDefinedString = "${var.group}_${var.project}_${local.resource_groups_L2.GWCC_KB.name}_Contributors"
       owners            = var.L2_RG_RBAC.contributorNames
     },
