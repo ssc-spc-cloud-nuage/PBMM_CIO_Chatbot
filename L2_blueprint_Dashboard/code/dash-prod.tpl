@@ -240,6 +240,7 @@
               "filteredPartIds": [
                 "StartboardPart-LogsDashboardPart-288f4922-f325-4ab2-b4b9-92e85073b89a",
                 "StartboardPart-LogsDashboardPart-288f4922-f325-4ab2-b4b9-92e85073b89c"
+
               ]
             }
           }

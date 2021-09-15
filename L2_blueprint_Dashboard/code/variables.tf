@@ -11,3 +11,6 @@ variable "lowerlevel_resource_group_name" {}
 variable "lowerlevel_container_name" {}
 variable "lowerlevel_key" {}
 variable "template_file" {}
+
+variable "L2_RBAC" {}
+

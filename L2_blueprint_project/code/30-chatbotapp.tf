@@ -8,8 +8,11 @@ module "Chatbot-App" {
   prefix            = local.prefix
 
   QnAEndpointHostName = module.Chatbot-EN-KB.app_srv.default_site_hostname
-  QnAKnowledgebaseId  = module.Chatbot-EN-KB.KBList["${var.env}-CIO-Chatbot-Chit-Chaty-EN-KB"].triggers.result
-  QnAAuthKey          = module.Chatbot-EN-KB.keyList["${var.env}-CIO-Chatbot-Chit-Chaty-EN-KB"].triggers.result
+  //QnAKnowledgebaseId  = module.Chatbot-EN-KB.KBList["${var.env}-CIO-Chatbot-Chit-Chaty-EN-KB"].triggers.result
+  //QnAAuthKey          = module.Chatbot-EN-KB.keyList["${var.env}-CIO-Chatbot-Chit-Chaty-EN-KB"].triggers.result
+  QnAKnowledgebaseId  = module.Chatbot-EN-KB.KBList["ScSc-CIO-Chatbot-Chit-Chaty-EN-KB"].triggers.result
+  QnAAuthKey          = module.Chatbot-EN-KB.keyList["ScSc-CIO-Chatbot-Chit-Chaty-EN-KB"].triggers.result
+
 
   bot_tier    = var.bot_tier
   bot_size    = var.bot_size

@@ -2,7 +2,6 @@ locals {
   rglist = {
 
     Project = { userDefinedString = "${local.userDefinedStringPrefix}_Project" }
-
   }
 }
 

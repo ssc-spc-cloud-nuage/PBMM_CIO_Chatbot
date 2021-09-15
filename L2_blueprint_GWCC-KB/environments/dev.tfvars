@@ -16,9 +16,9 @@ location = "canadacentral"
 
 L2_RBAC = {
   contributorEnterpriseID = []
-  ownerNames = ["john.nephin@ssc-spc.gc.ca"]
-  contributorNames = ["john.nephin@ssc-spc.gc.ca"]
-  readerNames = []
+  ownerNames              = ["john.nephin@ssc-spc.gc.ca"]
+  contributorNames        = ["john.nephin@ssc-spc.gc.ca"]
+  readerNames             = []
 }
 
 
@@ -28,7 +28,7 @@ L2_RBAC = {
 #  - tfstate file: launchpad_opensource_light.tfstate
 
 L1_terraform_remote_state_config = {
-    key                   = "L1_blueprint_base_dev.tfstate" # <========= Don't forget to update with the env name
+  key = "L1_blueprint_base_dev.tfstate" # <========= Don't forget to update with the env name
 }
 
 //Even though it shows as being available in canada on the web the deployment fails and says it is not.
@@ -41,25 +41,25 @@ chatbotName = "StudentChatbot"
 
 //Required to seed the KB with enough information that the service can set the language properly
 knowledgebaseList = [
-   {
-     languageCode = "EN",
-     deploy = true
-     knowledgebaseLocations = {
-       ScDc-CIO-Chatbot-GWCC-EN-KB = "knowledgebases/ScDc-CIO-Chatbot-GWCC-EN-KB.json"       
-     },
-   },
-   {
-      languageCode = "FR"
-      deploy = true
-      knowledgebaseLocations = {
-        ScDc-CIO-Chatbot-GWCC-FR-KB = "knowledgebases/ScDc-CIO-Chatbot-GWCC-FR-KB.json"
-      }
-   }
+  {
+    languageCode = "EN",
+    deploy       = true
+    knowledgebaseLocations = {
+      ScDc-CIO-Chatbot-GWCC-EN-KB = "knowledgebases/ScDc-CIO-Chatbot-GWCC-EN-KB.json"
+    },
+  },
+  {
+    languageCode = "FR"
+    deploy       = true
+    knowledgebaseLocations = {
+      ScDc-CIO-Chatbot-GWCC-FR-KB = "knowledgebases/ScDc-CIO-Chatbot-GWCC-FR-KB.json"
+    }
+  }
 ]
 
 L2_RG_RBAC = {
   contributorNames = [
-     "john.nephin@ssc-spc.gc.ca"
+    "john.nephin@ssc-spc.gc.ca"
   ]
   ownerNames = [
     "john.nephin@ssc-spc.gc.ca",
@@ -73,7 +73,7 @@ qna_size = "D1"
 
 search_sku = "standard"
 
-account_sku  = "S0"
+account_sku = "S0"
 
 bot_tier = "Standard"
 
@@ -90,10 +90,13 @@ contributorNames = ["John.Nephin@ssc-spc.gc.ca", "Bernard.Maltais@ssc-spc.gc.ca"
 ownerNames = ["ScDc-PBMM-Terraform_John.Nephin", "Terraform-CIO-Automation-SP"]
 
 //Needs to be unique to a bot.  See https://docs.microsoft.com/en-us/azure/bot-service/bot-service-resources-faq-azure?view=azure-bot-service-3.0#how-do-i-create-my-own-app-registration for creation
-appId = "e8a7e9c5-2017-482d-b8a6-cb9b70ffec04"
-appPassword ="GBn.mrT6I~8pKhx7L.an53P-9BR1n_gy6f"
 
-search_service_en = "scdcciochatbotensvc5g6r6a9sqfvq-ss"
+appId       = "e8a7e9c5-2017-482d-b8a6-cb9b70ffec04"
+appPassword = "GBn.mrT6I~8pKhx7L.an53P-9BR1n_gy6f"
+
+search_service_en     = "scdcciochatbotensvc5g6r6a9sqfvq-ss"
 search_service_key_en = "1162FEBF9E62F2E874EB764684F2BE22"
-search_service_fr = "scdcciochatbotfrsvcyby9rbgy64rt-ss"
+search_service_fr     = "scdcciochatbotfrsvcyby9rbgy64rt-ss"
 search_service_key_fr = "2220F77EC936A3FD91DC080810437DE1"
+
+

@@ -69,3 +69,6 @@ variable "search_service_en" {}
 variable "search_service_key_en" {}
 variable "search_service_fr" {}
 variable "search_service_key_fr" {}
+
+variable "app_service_plan_id" {}
+

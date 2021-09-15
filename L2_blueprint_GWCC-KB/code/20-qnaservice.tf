@@ -4,9 +4,9 @@
 module "ScSc-CIO-Chatbot-IM-EN-KB" {
   //  for_each                  = local.deployList
   source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210302.1"
-  location                  = local.resource_groups_L2.IM_KB.location
+  location                  = local.resource_groups_L2.GWCC_KB.location
   cognitiveServicesLocation = var.cognitiveServicesLocation
-  resourceGroupName         = local.resource_groups_L2.IM_KB.name
+  resourceGroupName         = local.resource_groups_L2.GWCC_KB.name
   prefix                    = "${local.prefix}-${var.knowledgebaseList[0].languageCode}"
   knowledgebaseList         = var.knowledgebaseList[0].knowledgebaseLocations
   qna_tier                  = var.qna_tier
@@ -14,17 +14,17 @@ module "ScSc-CIO-Chatbot-IM-EN-KB" {
   search_sku                = var.search_sku
   account_sku               = var.account_sku
   tags                      = var.tags
-  plan_id                   = azurerm_app_service_plan.Chatbot-svcplan.id
+  plan_id                   = var.app_service_plan_id
   search_service            = var.search_service_en
   search_service_key        = var.search_service_key_en
 }
 
-module "ScSc-CIO-Chatbot-IM-FR-KB" {
+module "ScSc-CIO-Chatbot-GWCC-FR-KB" {
   //  for_each                  = local.deployList
   source                    = "github.com/canada-ca-terraform-modules/terraform-azurerm-qna-knowledgebase?ref=20210302.1"
-  location                  = local.resource_groups_L2.IM_KB.location
+  location                  = local.resource_groups_L2.GWCC_KB.location
   cognitiveServicesLocation = var.cognitiveServicesLocation
-  resourceGroupName         = local.resource_groups_L2.IM_KB.name
+  resourceGroupName         = local.resource_groups_L2.GWCC_KB.name
   prefix                    = "${local.prefix}-${var.knowledgebaseList[1].languageCode}"
   knowledgebaseList         = var.knowledgebaseList[1].knowledgebaseLocations
   qna_tier                  = var.qna_tier
@@ -32,7 +32,7 @@ module "ScSc-CIO-Chatbot-IM-FR-KB" {
   search_sku                = var.search_sku
   account_sku               = var.account_sku
   tags                      = var.tags
-  plan_id                   = azurerm_app_service_plan.Chatbot-svcplan.id
+  plan_id                   = var.app_service_plan_id
   search_service            = var.search_service_fr
   search_service_key        = var.search_service_key_fr
 }
