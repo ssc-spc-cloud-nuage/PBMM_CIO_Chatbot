@@ -35,4 +35,5 @@ If all went well you will now have deployed the landinzone in the subscription.
 ## Notes
 For Cognative Services they are now soft deleted so you need to issue a command like ```az resource delete --ids /subscriptions/<subscription id>/providers/Microsoft.CognitiveServices/locations/westus/resourceGroups/<resource group>/deletedAccounts/<cognative services name>```
 
+
 Sometimes when deploying a KB the code gives an issue with the plan not matching the deployment.  The Lifecycle does not seem to be ignoring the code.  Running the code again usually fixes the issue.
