@@ -15,15 +15,15 @@ project = "Chatbot"
 location = "canadacentral"
 
 deployOptionalFeatures = {
-  ddos_protection_plan       = false
-  defaultRoute               = false
-  recovery_services_vault    = false
-  security_center            = false
-  sentinel                   = false
-  update_management          = false
-  deny_publicip_policy       = false
-  diagnostics_policy         = false
-  flow_logs_policy           = false
+  ddos_protection_plan    = false
+  defaultRoute            = false
+  recovery_services_vault = false
+  security_center         = false
+  sentinel                = false
+  update_management       = false
+  deny_publicip_policy    = false
+  diagnostics_policy      = false
+  flow_logs_policy        = false
 }
 
 ## Optional Features variables ##
@@ -73,11 +73,13 @@ domain = {
 
 L1_RBAC = {
   ownerNames = [
-    "john.nephin@ssc-spc.gc.ca"
+    "john.nephin@ssc-spc.gc.ca",
+    "peter.thiessen@ssc-spc.gc.ca"
   ]
 
   contributorNames = [
-    "john.nephin@ssc-spc.gc.ca"
+    "john.nephin@ssc-spc.gc.ca",
+    "peter.thiessen@ssc-spc.gc.ca"
   ]
 
   readerNames = [

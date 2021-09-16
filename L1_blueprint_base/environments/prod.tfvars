@@ -15,15 +15,15 @@ project = "Chatbot"
 location = "canadacentral"
 
 deployOptionalFeatures = {
-  ddos_protection_plan       = false
-  defaultRoute               = false
-  recovery_services_vault    = false
-  security_center            = true
-  sentinel                   = true
-  update_management          = false
-  deny_publicip_policy       = false
-  diagnostics_policy         = true
-  flow_logs_policy           = false
+  ddos_protection_plan    = false
+  defaultRoute            = false
+  recovery_services_vault = false
+  security_center         = true
+  sentinel                = true
+  update_management       = false
+  deny_publicip_policy    = false
+  diagnostics_policy      = true
+  flow_logs_policy        = false
 }
 
 ## Optional Features variables ##
@@ -74,14 +74,53 @@ L1_RBAC = {
   ownerNames = [
     "john.nephin@ssc-spc.gc.ca",
     "Bernard.Maltais@ssc-spc.gc.ca",
-    "Patrick.Heard@ssc-spc.gc.ca"
+    "Patrick.Heard@ssc-spc.gc.ca",
+    "peter.thiessen@ssc-spc.gc.ca"
   ]
 
   contributorNames = [
-    "john.nephin@ssc-spc.gc.ca"
+    "john.nephin@ssc-spc.gc.ca",
+    "peter.thiessen@ssc-spc.gc.ca"
   ]
 
   readerNames = [
   ]
 }
 
+
+windows_VMs = [
+  /*
+  # Template for Linux server variables
+
+  Server-Name = {
+    deploy = bool # Optional. Default is true
+    admin_username       = string # Optional. Default is "azureadmin" 
+    admin_password       = string # Required
+    os_managed_disk_type = string # Optional. Default is "StandardSSD_LRS"
+    vm_size              = string # Required. Example: "Standard_D2s_v3"
+    priority             = string # Optional. Default is "Regular". possible values are "Regular" or "Spot"
+  }
+  */
+
+  /*{
+    deploy                  = true
+    serverType              = "SWJ"
+    userDefinedString       = "RDS"
+    postfix                 = "01"
+    resource_group          = "Management"
+    subnet                  = "MAZ"
+    private_ip_address_host = 4
+    admin_username          = "azureadmin"
+    admin_password          = "Canada123!"
+    os_managed_disk_type    = "StandardSSD_LRS"
+    vm_size                 = "Standard_D4s_v3"
+    priority                = "Spot"
+    storage_image_reference = {
+      publisher = "MicrosoftWindowsServer"
+      offer     = "WindowsServer"
+      sku       = "2019-Datacenter"
+      version   = "latest"
+    }
+    encryptDisks = true
+  }*/
+]

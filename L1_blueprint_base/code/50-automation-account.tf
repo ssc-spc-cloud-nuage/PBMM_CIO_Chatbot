@@ -62,3 +62,4 @@ resource "azurerm_monitor_diagnostic_setting" "Project_automation_account-logs" 
     }
   }
 }
+
