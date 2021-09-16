@@ -37,3 +37,5 @@ For Cognative Services they are now soft deleted so you need to issue a command 
 
 
 Sometimes when deploying a KB the code gives an issue with the plan not matching the deployment.  The Lifecycle does not seem to be ignoring the code.  Running the code again usually fixes the issue.
+
+If the development VM does not work with `rover login` edit /etc/resolv.conf to change the nameserver to 8.8.8.8
